@@ -51,15 +51,13 @@ class DealsOfTheDayWidget extends StatelessWidget {
                         top: Radius.circular(8),
                       ),
                       child: Image.network(
-                        product.image ?? 'https://via.placeholder.com/300',
-
+                        product.image ?? 'https://via.placeholder.com/200',
                         width: double.infinity,
-                        height: 120,
                         fit: BoxFit.cover,
                         errorBuilder:
                             (context, error, stackTrace) => Container(
-                              color: Colors.red,
-                              child: Icon(Icons.error, color: Colors.white),
+                              color: Colors.grey[300],
+                              child: const Icon(Icons.error),
                             ),
                       ),
                     ),
