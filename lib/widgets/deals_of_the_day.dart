@@ -10,6 +10,8 @@ class DealsOfTheDayWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final crossAxisCount = context.getResponsiveValue([2, 3, 4]);
+
     return Container(
       padding: EdgeInsets.all(16),
       child: Column(
@@ -27,9 +29,9 @@ class DealsOfTheDayWidget extends StatelessWidget {
             shrinkWrap: true,
             physics: NeverScrollableScrollPhysics(),
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: context.getResponsiveValue([2, 3, 4]),
-              crossAxisSpacing: context.responiveSize(xs: 8, lg: 16),
-              mainAxisSpacing: context.responiveSize(xs: 8, lg: 16),
+              crossAxisCount: crossAxisCount,
+              crossAxisSpacing: context.responiveSize(xs: 20, lg: 16),
+              mainAxisSpacing: context.responiveSize(xs: 20, lg: 16),
               childAspectRatio: context.responiveSize(xs: 0.7, lg: 0.75),
             ),
             itemCount: data.length,
@@ -52,6 +54,7 @@ class DealsOfTheDayWidget extends StatelessWidget {
                         product.image ?? 'https://via.placeholder.com/300',
 
                         width: double.infinity,
+                        height: 120,
                         fit: BoxFit.cover,
                         errorBuilder:
                             (context, error, stackTrace) => Container(
@@ -61,7 +64,9 @@ class DealsOfTheDayWidget extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.all(context.responiveSize(xs: 8.0, lg: 16.0)),
+                      padding: EdgeInsets.all(
+                        context.responiveSize(xs: 8.0, lg: 16.0),
+                      ),
                       child: Column(
                         spacing: 4,
                         crossAxisAlignment: CrossAxisAlignment.start,
