@@ -1,0 +1,86 @@
+{
+    "sections": [
+        {
+            "type": "banner",
+            "data": [
+                {
+                    "image_url": "https://picsum.photos/id/1018/800/400"
+                },
+                {
+                    "image_url": "https://picsum.photos/id/1015/800/400"
+                },
+                {
+                    "image_url": "https://picsum.photos/id/1020/800/400"
+                }
+            ]
+        },
+        {
+            "type": "video_banner",
+            "data": [
+                {
+                    "video_url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+                    "thumbnail": "https://picsum.photos/id/1032/800/400"
+                }
+            ]
+        },
+        {
+            "type": "categories",
+            "data": [
+                {
+                    "name": "Electronics",
+                    "image": "https://picsum.photos/id/1050/150/150"
+                },
+                {
+                    "name": "Fashion",
+                    "image": "https://picsum.photos/id/1062/150/150"
+                },
+                {
+                    "name": "Home",
+                    "image": "https://picsum.photos/id/1076/150/150"
+                },
+                {
+                    "name": "Toys",
+                    "image": "https://picsum.photos/id/1084/150/150"
+                }
+            ]
+        },
+        {
+            "type": "deals_of_the_day",
+            "data": [
+                {
+                    "title": "Wireless Earbuds",
+                    "price": 49.99,
+                    "image": "https://picsum.photos/id/1005/300/300",
+                    "discount": "25% off"
+                },
+                {
+                    "title": "Smartphone",
+                    "price": 299.99,
+                    "image": "https://picsum.photos/id/1011/300/300",
+                    "discount": "15% off"
+                }
+            ]
+        },
+        {
+            "type": "product_grid",
+            "title": "Trending Now",
+            "data": [
+                {
+                    "title": "Gaming Laptop",
+                    "price": 999.99,
+                    "image": "https://picsum.photos/id/1035/200/200"
+                },
+                {
+                    "title": "Bluetooth Speaker",
+                    "price": 59.99,
+                    "image": "https://picsum.photos/id/1021/200/200"
+                },
+                {
+                    "title": "Fitness Tracker",
+                    "price": 79.99,
+                    "image": "https://picsum.photos/id/1044/200/200"
+                }
+            ]
+        }
+    ]
+}
